@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+
+ 
+int main() {
+ 
+    int segundos, horas, minutos;
+    
+    horas=0;
+    minutos=0;
+    
+    scanf("%i", &segundos);
+    
+    if(segundos>=3600){
+        horas= segundos/3600.0;
+        segundos= segundos- (horas*3600);
+    }
+    else horas = 0;
+    
+    if (segundos >= 60){
+        minutos = segundos/60.0;
+        segundos = segundos-(minutos*60);
+    }
+    else minutos = 0;
+    
+    printf("%i:%i:%i\n", horas, minutos, segundos);
+    
+ 
+    return 0;
+}

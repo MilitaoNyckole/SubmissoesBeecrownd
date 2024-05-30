@@ -1,0 +1,21 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int n1, n2;
+    double v1, salario;
+   
+   scanf("%i", &n1);
+   scanf("%i", &n2);
+    scanf("%lf", &v1);
+     
+   
+   salario = (n2*v1);
+   
+   printf("NUMBER = %i\n",n1);
+   printf("SALARY = U$ %.2lf\n", salario);
+ 
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int pc1, qnt1, pc2, qnt2;
+    double valor1, valor2, valorfinal;
+    
+    scanf("%i %i %lf", &pc1, &qnt1, &valor1);
+    scanf("%i %i %lf", &pc2, &qnt2, &valor2);
+    
+    valorfinal= (qnt1*valor1)+ (qnt2*valor2);
+    
+    printf("VALOR A PAGAR: R$ %.2lf\n", valorfinal);
+ 
+    return 0;
+}
